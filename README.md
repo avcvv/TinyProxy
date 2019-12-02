@@ -1,1 +1,3 @@
 # TinyProxy
+
+Light proxy server
