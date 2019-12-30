@@ -15,7 +15,7 @@ echo
 echo '                                  Start install proxies software'
 echo -e "\n\n"
 
-yum -y install nano tinyproxy
+yum -y install epel-release nano tinyproxy
 sed -i "/Port 8888/c\Port $outport" /etc/tinyproxy/tinyproxy.conf
 sed -i '/#XTinyproxy Yes/c\XTinyproxy No' /etc/tinyproxy/tinyproxy.conf
 sed -i '/ViaProxyName "tinyproxy"/c\#ViaProxyName "tinyproxy" ' /etc/tinyproxy/tinyproxy.conf
